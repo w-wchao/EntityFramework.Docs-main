@@ -1,0 +1,109 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "**.md",
+          "**/*.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "**/includes/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**.png",
+          "**.jpg"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "ms.service": "entity-framework",
+      "breadcrumb_path": "/ef/breadcrumb/toc.json",
+      "searchScope": [
+        "Entity Framework"
+      ],
+      "ms.topic": "concept-article",
+      "audience": "developer",
+      "ms.tgt_pltfrm": "dotnet",
+      "ms.devlang": "dotnet",
+      "ms.author": "sampatel",
+      "feedback_system": "OpenSource",
+      "feedback_github_repo": "dotnet/EntityFramework.Docs",
+      "feedback_product_url": "https://github.com/dotnet/efcore/issues/new/choose",
+      "open_source_feedback_contributorGuideUrl": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+      "open_source_feedback_issueTitle": "",
+      "open_source_feedback_productLogoLightUrl": "https://learn.microsoft.com/media/logos/logo_net.svg",
+      "open_source_feedback_productLogoDarkUrl": "https://learn.microsoft.com/media/logos/logo_net.svg",
+      "open_source_feedback_issueUrl": "https://github.com/dotnet/EntityFramework.Docs/issues/new?template=z-customer-feedback.yml",
+      "open_source_feedback_productName": ".NET",
+      "uhfHeaderId": "MSDocsHeader-DotNet"
+    },
+    "fileMetadata": {
+      "ms.subservice": {
+        "ef6/**/**.md": "entity-framework-6",
+        "core/**/**.md": "entity-framework-core",
+        "efcore-and-ef6/**/**.md": "entity-framework-core"
+      },
+      "feedback_product_url": {
+        "ef6/**/**.md": "https://github.com/dotnet/ef6/issues/new"
+      },
+      "ms.technology": {
+      },
+      "ms.update-cycle": {
+        "**/**.{md,yml}": "3650-days"
+      }           
+    },
+    "dest": "_site",
+    "template": [
+      "default"
+    ],
+    "markdownEngineName": "markdig"
+  }
+}

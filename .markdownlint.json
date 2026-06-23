@@ -1,0 +1,20 @@
+{
+    "default": true,
+    "MD002": false,
+    "MD013": false,
+    "MD024": false,
+    "MD025": { "front_matter_title": "" },
+    "MD028": false,
+    "MD033": false,
+    "MD036": false,
+    "MD041": false,
+    "MD046": {
+        "style": "fenced"
+    },
+    "MD051": false,
+    "MD055": false,
+    "MD056": false,
+    "MD059": false,
+    "MD060": false,
+    "DOCSMD010": false
+}

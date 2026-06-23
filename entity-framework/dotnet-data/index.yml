@@ -1,0 +1,266 @@
+### YamlMime:Hub
+
+title: .NET (C#) data documentation hub
+summary: This page contains resources about how to work with data using .NET (C#). Use our docs and tutorials to choose from our wide variety of available databases & data access approaches and get started quick!
+brand: dotnet
+
+metadata:
+  title:  .NET (C#) data documentation 
+  center  description: This page contains resources about how to work with data using .NET (C#). Use our docs and tutorials to choose from our wide variety of available databases & data access approaches and get started quick!
+  ms.product: entity-framework
+  ms.topic: hub-page
+  author: jcjiang
+  ms.date: 03/08/2023
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:    
+
+      # Card
+    - title: "Accessing your data using C# (Entity Framework Core)"
+      itemType: overview
+      url: /ef/core/
+
+    # Card
+    - title: "Tutorial: Query and manage data using C# (Entity Framework Core)"
+      itemType: quickstart
+      url: /training/modules/persist-data-ef-core/
+
+    # Card
+    - title: "Video: Access a SQL Server or Azure SQL database in 6 minutes with C#"
+      itemType: quickstart
+      url: /shows/on-net/how-do-i-use-sql-server-with-csharp-and-dotnet
+
+    # Card
+    - title: "Tutorial: Access a SQLite database using C# (Entity Framework Core)"
+      itemType: quickstart
+      url: /ef/core/get-started/overview/first-app
+
+    # Card
+    - title: "Using C# to work with a SQL Server or Azure SQL database (Docs)"
+      itemType: overview
+      url: /troubleshoot/developer/visualstudio/csharp/language-compilers/create-sql-server-database-programmatically
+    
+    # Card
+    - title: "Querying data with Language-Integrated Query (LINQ)"
+      itemType: overview
+      url: /dotnet/standard/linq
+
+    # Card
+    - title: "Tutorial: Create a web API that uses a database"
+      itemType: quickstart
+      url: /aspnet/core/tutorials/first-web-api
+
+    # Card
+    - title: "What is ML.NET?"
+      itemType: overview
+      url: https://dotnet.microsoft.com/learn/ml-dotnet/what-is-mldotnet
+
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Supported database management systems # < 60 chars (optional)
+      items:
+        # Card
+        - title: Relational databases
+          links:
+            - url: /dotnet/standard/data/sqlite/
+              text: "Use .NET (C#) to connect and query data in SQLite"
+            - url: /sql/
+              text: "Use .NET (C#) to connect and query data in Microsoft SQL Server or Azure SQL"
+            - url: /azure/postgresql/flexible-server/connect-csharp
+              text: "Use .NET (C#) to connect and query data in Azure Database for PostgreSQL - Flexible Server"
+            - url: /azure/mysql/connect-csharp
+              text: "Use .NET (C#) to connect and query data in Azure Database for MySQL"
+
+        # Card
+        - title: Document database (Azure Cosmos DB)
+          links:
+            - url: /azure/cosmos-db
+              text: "Azure Cosmos DB documentation"
+            - url: /azure/cosmos-db/sql/sql-api-dotnet-application
+              text: "Develop an ASP.NET Core MVC web application with Azure Cosmos DB by using .NET SDK"
+            - url: /azure/cosmos-db/sql/create-notebook-visualize-data
+              text: "Create a notebook in Azure Cosmos DB to analyze and visualize the data"
+            - url: /azure/cosmos-db/mongodb/mongodb-introduction
+              text: "Azure Cosmos DB for MongoDB"
+            - url: /ef/core/providers/cosmos/
+              text: "EF Core Azure Cosmos DB provider"
+
+        # Card
+        - title: Graph database (Azure Cosmos DB Graph API)
+          links:
+            - url: /azure/cosmos-db/graph/graph-introduction
+              text: "Introduction to Azure Cosmos DB for Apache Gremlin"
+            - url: /azure/cosmos-db/graph/create-graph-dotnet
+              text: "Build a .NET Framework or Core application using the Azure Cosmos DB for Apache Gremlin account"
+            - url: /sql/relational-databases/graphs/sql-graph-architecture
+              text: "SQL Graph Architecture"
+
+        # Card
+        - title: Distributed key/value databases and cache
+          links:
+            - url: https://microsoft.github.io/FASTER/
+              text: "FASTER concurrent persistent key/value store"
+            - url: /dotnet/orleans/overview
+              text: "Microsoft Orleans framework for distributed apps"
+            - url: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Data.Tables_12.5.0/sdk/tables/Azure.Data.Tables/README.md
+              text: "Azure Tables client library for .NET"
+            - url: /azure/azure-cache-for-redis/cache-overview
+              text: "Azure Cache for Redis"
+
+        # Card
+        - title: Unstructured/blob storage
+          links:
+            - url: /azure/storage/blobs/storage-blobs-introduction
+              text: "Introduction to blob storage"
+            - url: /azure/storage/blobs/storage-quickstart-blobs-dotnet?tabs=environment-variable-windows
+              text: "Quickstart: Azure Blob Storage client library v12 for .NET"
+            - url: /azure/storage/blobs/data-lake-storage-introduction
+              text: "Introduction to Azure Data Lake Storage Gen2"
+
+    #Section
+    - title: Data services
+      items:
+
+        # Card
+        - title: EF Core
+          links:
+            - url: /ef/core/
+              text: "Overview"
+            - url: /ef/core/get-started/overview/first-app
+              text: "Create your first EF Core app"
+            - url: /training/modules/persist-data-ef-core/
+              text: "Learn: Persist and retrieve relational data with EF Core"
+            - url: /ef/core/providers/
+              text: "Supported databases"
+
+        - title: Language Integrated Query (LINQ)
+          links:
+            - url: /dotnet/csharp/programming-guide/concepts/linq
+              text: "Overview"
+            - url: /dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries
+              text: "Introduction to LINQ queries"
+            - url: /dotnet/csharp/programming-guide/concepts/linq/linq-to-objects
+              text: "LINQ over IEnumerable"
+        
+        # Card
+        - title: Big data
+          links:
+            - url: /dotnet/spark/what-is-apache-spark-dotnet
+              text: "What is .NET for Apache Spark?"
+            - url: https://dotnet.microsoft.com/learn/data/spark-tutorial/intro
+              text: "10-minute .NET for Apache Spark(tm) Tutorial"    
+            - url: /azure/synapse-analytics/overview-what-is
+              text: "What is Azure Synapse?"
+
+        # Card
+        - title: Machine learning
+          links:
+            - url: https://dotnet.microsoft.com/learn/ml-dotnet/what-is-mldotnet
+              text: "What is ML.NET? Step-by-step"
+            - url: /dotnet/machine-learning/
+              text: "ML.NET documentation"
+            - url: /dotnet/machine-learning/tutorials/
+              text: "ML.NET tutorials"
+
+        # Card
+        - title: Mobile apps
+          links:
+            - url: /azure/developer/mobile-apps/azure-mobile-apps/overview
+              text: "Microsoft Datasync Framework (Azure mobile apps)"
+            - url: /azure/developer/mobile-apps/azure-mobile-apps/quickstarts/maui/
+              text: "Build a .NET MAUI mobile app with Azure Mobile Apps"
+            - url: /azure/developer/mobile-apps/azure-mobile-apps/howto/data-sync
+              text: "Offline data sync"
+
+        # Card
+        - title: ETL and analytics
+          links:
+            - url: /azure/architecture/data-guide/relational-data/etl
+              text: "Extract, Transform and Load (ETL) Architecture"
+            - url: /azure/data-factory/concepts-pipelines-activities?tabs=data-factory
+              text: "ETL with Azure Data Factory and/or Synapse Analytics"
+            - url: /sql/integration-services/sql-server-integration-services
+              text: "SQL Server Integration Services"
+
+        # Card
+        - title: Messages, notifications, and events
+          links:
+            - url: /dotnet/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications
+              text: "Implementing event-based communication between .NET microservices"
+            - url: /dotnet/architecture/serverless/event-grid
+              text: "Serverless messaging with Azure Event Grid"
+            - url: /azure/event-hubs/event-hubs-dotnet-standard-getstarted-send
+              text: "Send and receive events from .NET using Azure Event Hubs"
+            - url: /dotnet/orleans/overview 
+              text: "Distributed .NET apps with Orleans"
+              
+
+    # Section
+    - title: "APIs"
+      items:
+        # Card
+        - title: REST
+          links:
+            - url: /aspnet/core/tutorials/min-web-api
+              text: "Minimal Web API tutorial"
+            - url: /azure/architecture/best-practices/api-design
+              text: "RESTful web API design"
+            - url: /azure/api-management/
+              text: "Azure API Management (APIM)"
+            - url: /aspnet/core/tutorials/web-api-help-pages-using-swagger
+              text: "Document APIs with Swagger (OpenAPI)"
+
+        # Card
+        - title: OData
+          links:
+            - url: /odata/overview
+              text: "OData overview"
+            - url: /odata/client/getting-started
+              text: "Get started with the OData client for .NET"
+            - url: https://youtu.be/Q3Ove-2Uh94
+              text: "Video: OData (.NET Data community standup)"
+
+        # Card
+        - title: GraphQL
+          links:
+            - url: /shows/graphql/
+              text: "Video series: Learning GraphQL"
+            - url: /azure/api-management/graphql-api
+              text: "Azure API Management support for GraphQL"
+            - url: /shows/on-net/getting-started-with-hotchocolate
+              text: "Video: Getting start with GraphQL on .NET using HotChocolate"
+
+        # Card
+        - title: CoreWCF
+          links:
+            - url: https://github.com/CoreWCF/CoreWCF
+              text: "CoreWCF overview"
+            - url: https://github.com/CoreWCF/CoreWCF/blob/main/Documentation/Walkthrough.md
+              text: "CoreWCF walkthrough"
+
+        # Card
+        - title: gRPC
+          links:
+            - url: /aspnet/core/grpc/
+              text: "Overview of gRPC on .NET"
+            - url: /aspnet/core/grpc/basics
+              text: "Write gRPC services with C# and .NET"
+            - url: /aspnet/core/grpc/client
+              text: "Call gRPC services from .NET with C#"
+            - url: /aspnet/core/grpc/why-migrate-wcf-to-dotnet-grpc
+              text: "Why migrate from WCF to gRPC on ASP.NET Core"
+
+        # Card
+        - title: SignalR
+          links:
+            - url: /aspnet/signalr/overview/getting-started/introduction-to-signalr
+              text: "Introduction to SignalR"
+            - url: /aspnet/signalr/overview/guide-to-the-api/
+              text: "Guide to the SignalR API"
+            - url: /aspnet/core/signalr/api-design
+              text: "SignalR API design considerations"
