@@ -4,3 +4,4 @@ Console.WriteLine("10.30");
 Console.WriteLine("10.30");
 Console.WriteLine("0623，15.34");
 Console.WriteLine("0623，16.12");
+Console.WriteLine("0624，08.56");
