@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>登录 - 示例</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="login-title">
+      <div class="card-header">
+        <h1 id="login-title">登录到你的账户</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">🌙</button>
+      </div>
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="email">邮箱或用户名</label>
+          <input type="text" id="email" name="email" autocomplete="username" required />
+          <div class="error" id="email-error" aria-live="polite"></div>
+        </div>
+
+        <div class="field field-password">
+          <label for="password">密码</label>
+          <div class="password-wrap">
+            <input type="password" id="password" name="password" autocomplete="current-password" required />
+            <button type="button" id="toggle-password" class="toggle-password" aria-label="显示密码">👁️</button>
+          </div>
+          <div class="error" id="password-error" aria-live="polite"></div>
+        </div>
+
+        <div class="field row remember">
+          <label>
+            <input type="checkbox" id="remember" name="remember" /> 记住我
+          </label>
+          <a class="link" href="#">忘记密码?</a>
+        </div>
+
+        <button type="submit" class="btn">
+          <span class="btn-text">登录</span>
+          <span class="spinner" aria-hidden></span>
+        </button>
+        <div id="submit-message" class="submit-message" aria-live="polite"></div>
+      </form>
+
+      <footer class="signup">
+        还没有账户？ <a href="#">注册</a>
+      </footer>
+    </section>
+    <section class="success-screen" id="success-screen" aria-hidden="true">
+      <div class="success-card">
+        <h2>登录成功</h2>
+        <p>欢迎回来！页面将跳转或显示你的仪表盘。</p>
+        <button id="success-continue" class="btn">继续</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
