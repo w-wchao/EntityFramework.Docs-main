@@ -2,8 +2,10 @@ using System;
 
 partial class Program
 {
-    static void Main()
+    static void Main123()
     {
-        Console.WriteLine("hello world");
+        Console.WriteLine("hello hello world");
+        Console.WriteLine("hello world123");
+        Console.WriteLine("hello 456");
     }
 }
