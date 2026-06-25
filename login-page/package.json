@@ -1,0 +1,16 @@
+{
+  "name": "login-page-example",
+  "version": "1.0.0",
+  "description": "示例登录页面的本地后端（仅用于演示）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
