@@ -1,0 +1,30 @@
+:root{--bg-start:#eef2ff;--bg-end:#e6fffa;--card-bg:#fff;--accent:#2563eb;--muted:#6b7280}
+.dark{--bg-start:#0f172a;--bg-end:#021124;--card-bg:#0b1220;--accent:#60a5fa;--muted:#9ca3af;color-scheme:dark}
+*{box-sizing:border-box}
+body,html,#root{height:100%;margin:0}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(135deg,var(--bg-start),var(--bg-end))}
+.card{background:var(--card-bg);padding:28px;border-radius:12px;max-width:420px;width:100%;box-shadow:0 6px 20px rgba(16,24,40,0.08)}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.theme-toggle{background:transparent;border:0;cursor:pointer;font-size:18px}
+label{display:block;margin-top:12px;color:var(--muted)}
+input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:6px}
+.btn{display:inline-block;width:100%;padding:10px 12px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:600;font-size:15px;cursor:pointer;position:relative}
+.btn .spinner{display:inline-block;width:18px;height:18px;border-radius:50%;border:2px solid rgba(255,255,255,0.35);border-top-color:#fff;vertical-align:middle;margin-left:8px;opacity:0;transform:scale(0.8);transition:opacity .18s,transform .18s}
+.btn.loading .spinner{opacity:1;transform:scale(1);animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.error{color:#dc2626;margin-top:10px}
+.success-screen{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.success-card{background:var(--card-bg);padding:28px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.4);text-align:center;color:var(--muted)}
+.success-card h2{color:var(--accent);margin:0 0 8px 0}
+
+/* password strength meter */
+.pw-meter{height:8px;background:#eef2f6;border-radius:6px;margin-top:8px;overflow:hidden}
+.pw-bar{height:100%;width:0%;transition:width .25s}
+.pw-0{width:6%;background:#f87171}
+.pw-1{width:35%;background:#f97316}
+.pw-2{width:60%;background:#facc15}
+.pw-3{width:85%;background:#60a5fa}
+.pw-4{width:100%;background:#34d399}
+
+.card-header select{padding:6px;border-radius:6px;margin-right:6px}
+
